@@ -1,8 +1,5 @@
 
-import solutions.SolutionInterface;
-import solutions.SolutionTask1;
-import solutions.SolutionTask2;
-import solutions.SolutionTask3;
+import solutions.*;
 
 import java.util.*;
 
@@ -12,9 +9,10 @@ public class Main {
 
     private static final ArrayList<SolutionInterface> solutions = new ArrayList<>(
         Arrays.asList(
-        new SolutionTask1(),
-        new SolutionTask2(),
-        new SolutionTask3()
+                new SolutionTask1(),
+                new SolutionTask2(),
+                new SolutionTask3(),
+                new SolutionTask4()
             )
     );;
 
