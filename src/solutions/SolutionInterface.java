@@ -1,6 +1,8 @@
+package solutions;
+
 public interface SolutionInterface {
     String getParametersDescription();
     int getTaskNumber();
-    int getNumberOfLines();
+    int getNumberOfInputLines();
     String execute(String arguments);
 }
