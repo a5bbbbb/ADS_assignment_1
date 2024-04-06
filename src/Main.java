@@ -1,4 +1,8 @@
 
+import solutions.SolutionInterface;
+import solutions.SolutionTask1;
+import solutions.SolutionTask2;
+
 import java.util.*;
 
 public class Main {
@@ -17,7 +21,8 @@ public class Main {
     private static void prepareTasks(){
          solutions = new ArrayList<>(
                 Arrays.asList(
-                        new SolutionTask1()
+                        new SolutionTask1(),
+                        new SolutionTask2()
                 )
         );
     }
@@ -56,7 +61,8 @@ public class Main {
             return;
         }
         System.out.println(solution.getParametersDescription());
-        String response = solution.execute(readArguments(solution.getNumberOfLines()));
+        String response = solution.execute(readArguments(solution.getNumberOfInputLines()));
+        System.out.println("Output:");
         System.out.println(response);
     }
 

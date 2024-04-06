@@ -1,8 +1,8 @@
+package solutions;
+
 import java.util.Scanner;
 
 public class SolutionTask1 implements SolutionInterface{
-
-    private Scanner scan;
 
     @Override
     public String getParametersDescription() {
@@ -15,13 +15,13 @@ public class SolutionTask1 implements SolutionInterface{
     }
 
     @Override
-    public int getNumberOfLines() {
+    public int getNumberOfInputLines() {
         return 2;
     }
 
     @Override
     public String execute(String arguments) {
-        scan = new Scanner(arguments);
+        Scanner scan = new Scanner(arguments);
         int n, min = Integer.MAX_VALUE;
         try{
             n = scan.nextInt();
