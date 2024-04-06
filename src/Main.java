@@ -2,6 +2,7 @@
 import solutions.SolutionInterface;
 import solutions.SolutionTask1;
 import solutions.SolutionTask2;
+import solutions.SolutionTask3;
 
 import java.util.*;
 
@@ -22,7 +23,8 @@ public class Main {
          solutions = new ArrayList<>(
                 Arrays.asList(
                         new SolutionTask1(),
-                        new SolutionTask2()
+                        new SolutionTask2(),
+                        new SolutionTask3()
                 )
         );
     }
