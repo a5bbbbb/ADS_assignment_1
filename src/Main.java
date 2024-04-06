@@ -10,23 +10,19 @@ public class Main {
 
     private static final Scanner scan = new Scanner(System.in);
 
-    private static ArrayList<SolutionInterface> solutions;
+    private static final ArrayList<SolutionInterface> solutions = new ArrayList<>(
+        Arrays.asList(
+        new SolutionTask1(),
+        new SolutionTask2(),
+        new SolutionTask3()
+            )
+    );;
 
     private static void printHello(){
         System.out.println("""
                 Hello!
                 This is an application made to test the solutions to assignment 1.
                 """);
-    }
-
-    private static void prepareTasks(){
-         solutions = new ArrayList<>(
-                Arrays.asList(
-                        new SolutionTask1(),
-                        new SolutionTask2(),
-                        new SolutionTask3()
-                )
-        );
     }
 
     private static SolutionInterface getSolution(int taskNumber) throws Exception {
@@ -70,7 +66,6 @@ public class Main {
 
     public static void main(String[] args) {
         printHello();
-        prepareTasks();
         executeSolution();
     }
 }
