@@ -13,7 +13,8 @@ public class Main {
                 new SolutionTask2(),
                 new SolutionTask3(),
                 new SolutionTask4(),
-                new SolutionTask5()
+                new SolutionTask5(),
+                new SolutionTask6()
             )
     );
 
