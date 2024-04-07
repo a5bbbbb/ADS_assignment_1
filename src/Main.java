@@ -12,9 +12,10 @@ public class Main {
                 new SolutionTask1(),
                 new SolutionTask2(),
                 new SolutionTask3(),
-                new SolutionTask4()
+                new SolutionTask4(),
+                new SolutionTask5()
             )
-    );;
+    );
 
     private static void printHello(){
         System.out.println("""
