@@ -14,7 +14,8 @@ public class Main {
                 new SolutionTask3(),
                 new SolutionTask4(),
                 new SolutionTask5(),
-                new SolutionTask6()
+                new SolutionTask6(),
+                new SolutionTask7()
             )
     );
 
