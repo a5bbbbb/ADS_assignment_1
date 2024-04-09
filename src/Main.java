@@ -128,10 +128,24 @@ public class Main {
 
     }
 
-    public static void main(String[] args) {
+    private static boolean askContinue(){
+        System.out.println("Do you wish to continue testing solutions? y/n");
+        String ans = scan.nextLine();
+        return Objects.equals(ans, "y");
+    }
 
+    private static void runApplication(){
         printHello();
 
-        executeSolution(askTaskNumber());
+        do {
+
+            executeSolution(askTaskNumber());
+
+        }while(askContinue());
+
+    }
+
+    public static void main(String[] args) {
+        runApplication();
     }
 }
