@@ -18,6 +18,15 @@ public class SolutionTask3 implements SolutionInterface {
         return 1;
     }
 
+    /*
+     * This is a method that calculates whether integer is prime or composite.
+     *
+     * Time complexity: O(sqrt(n))
+     *
+     * @param arguments string that contains 'n'.
+     *
+     * @return String prime or composite.
+     */
     @Override
     public String execute(String arguments) {
         Scanner scan = new Scanner(arguments);

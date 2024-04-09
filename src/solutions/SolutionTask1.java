@@ -18,7 +18,15 @@ public class SolutionTask1 implements SolutionInterface{
     public int getNumberOfInputLines() {
         return 2;
     }
-
+    /*
+     * This is a method that finds a minimum value in a list.
+     *
+     * Time complexity: O(n)
+     *
+     * @param arguments string that contains 'n' and 'n' integers.
+     *
+     * @return String minimum value given in the list.
+     */
     @Override
     public String execute(String arguments) {
         Scanner scan = new Scanner(arguments);

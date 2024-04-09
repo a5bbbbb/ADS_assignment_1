@@ -19,6 +19,15 @@ public class SolutionTask4 implements SolutionInterface{
         return 1;
     }
 
+    /*
+     * This is a method that calculates nth factorial.
+     *
+     * Time complexity: O(n)
+     *
+     * @param arguments argument that contains 'n'.
+     *
+     * @return String nth factorial.
+     */
     @Override
     public String execute(String arguments) {
         Scanner scan = new Scanner(arguments);

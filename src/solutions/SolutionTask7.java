@@ -21,10 +21,19 @@ public class SolutionTask7 implements SolutionInterface{
         return 2;
     }
 
-    private static String recReadLazyPrint(int n) throws Exception {
+    /*
+     * This is a method that prints list in back order using recursion.
+     *
+     * Time complexity: O(n)
+     *
+     * @param n is the number of integers remaining to be read.
+     *
+     * @return String numbers of the list in back order.
+     */
+    private static String recReadLazyLog(int n) throws Exception {
         if(n == 1)return String.valueOf(scan.nextInt());
         int r = scan.nextInt();
-        return recReadLazyPrint(n - 1) + " " + r;
+        return recReadLazyLog(n - 1) + " " + r;
     }
 
     @Override
@@ -33,7 +42,7 @@ public class SolutionTask7 implements SolutionInterface{
         int n;
         try{
             n = scan.nextInt();
-            return recReadLazyPrint(n);
+            return recReadLazyLog(n);
         }catch (Exception ignored){
             return "Input is incorrect";
         }

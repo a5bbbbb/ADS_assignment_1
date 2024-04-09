@@ -18,11 +18,28 @@ public class SolutionTask8 implements SolutionInterface{
         return 1;
     }
 
+    /*
+     * This method checks that all symbols in the string are digits using recursion.
+     *
+     * Time complexity: O(n)
+     *
+     * @param string that is checked.
+     * @param index of the symbol that is checked.
+     *
+     * @return boolean true if all symbols in the string are digits.
+     */
     private boolean isAllDigits(String s, int i){
         if(i == s.length())return true;
         return Character.isDigit(s.charAt(i)) && isAllDigits(s, i + 1);
     }
 
+    /*
+     * This is a convenience method that calls isAllDigits(s, 0).
+     *
+     * @param string that is checked.
+     *
+     * @return boolean true if all symbols in the string are digits.
+     */
     private boolean isAllDigits(String s){
         return isAllDigits(s, 0);
     }

@@ -18,6 +18,16 @@ public class SolutionTask10 implements SolutionInterface{
         return 1;
     }
 
+    /*
+     * This method calculates gcd use Euclidean algorithm.
+     *
+     * Time complexity: O(log(n)) where n is the biggest number of the arguments.
+     *
+     * @param a.
+     * @param b.
+     *
+     * @return gcd.
+     */
     private int gcd(int a, int b){
         if(b == 0)return a;
         return gcd(b, a%b);

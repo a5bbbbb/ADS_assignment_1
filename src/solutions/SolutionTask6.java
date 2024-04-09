@@ -18,6 +18,16 @@ public class SolutionTask6 implements SolutionInterface{
         return 1;
     }
 
+    /*
+     * This is a method that calculates nth power of a.
+     *
+     * Time complexity: O(n)
+     *
+     * @param a is the number to be raised to nth power.
+     * @param n is the power.
+     *
+     * @return nth power of a.
+     */
     private long calcPowerRec(int a, int n){
 
         if (n == 0) return 1;

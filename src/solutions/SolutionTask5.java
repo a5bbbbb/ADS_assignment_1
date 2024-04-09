@@ -19,6 +19,15 @@ public class SolutionTask5 implements SolutionInterface{
         return 1;
     }
 
+    /*
+     * This is a method that calculates nth fibonacci number.
+     *
+     * Time complexity: O(n)
+     *
+     * @param arguments argument that contain 'n'.
+     *
+     * @return String nth fibonacci number.
+     */
     @Override
     public String execute(String arguments) {
         Scanner scan = new Scanner(arguments);

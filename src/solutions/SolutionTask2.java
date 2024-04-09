@@ -19,6 +19,15 @@ public class SolutionTask2 implements SolutionInterface{
         return 2;
     }
 
+    /*
+     * This is a method that calculates average value in a list of integers.
+     *
+     * Time complexity: O(n)
+     *
+     * @param arguments string that contain 'n' and 'n' integers.
+     *
+     * @return String average value of the list.
+     */
     @Override
     public String execute(String arguments) {
         Scanner scan = new Scanner(arguments);
