@@ -29,6 +29,8 @@ public class SolutionTask7 implements SolutionInterface{
      * @param n is the number of integers remaining to be read.
      *
      * @return String numbers of the list in back order.
+     *
+     * @throws Exception if the input is incorrect.
      */
     private static String recReadLazyLog(int n) throws Exception {
         if(n == 1)return String.valueOf(scan.nextInt());
