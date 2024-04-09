@@ -30,9 +30,9 @@ public class Main {
     }
 
     /*
-    * getSolution
+    * This is just a linear search through the list of solutions.
     *
-    * Just a linear search through the list of solutions.
+    * Time complexity: O(solutions.length())
     *
     * @param taskNumber number of the task required to be found.
     *
@@ -50,9 +50,9 @@ public class Main {
     }
 
     /*
-    * readArguments
+    * This method reads certain number of line from console, and returns them as a single String object.
     *
-    * Reads certain number of line from console, and returns them as a single String object.
+    * Time complexity: O(numberOfLines)
     *
     * @param numberOfLines numbers of line that needs to be read from the console.
     *
@@ -106,11 +106,26 @@ public class Main {
 
         System.out.println(solution.getParametersDescription());
 
-        String response = solution.execute(readArguments(solution.getNumberOfInputLines()));
+        String arguments = readArguments(solution.getNumberOfInputLines());
+
+        // Save time before execution.
+
+        long time1 = System.currentTimeMillis();
+
+        String response = solution.execute(arguments);
+
+        // Save time after execution
+
+        long time2 = System.currentTimeMillis();
 
         System.out.println("Output:");
 
         System.out.println(response);
+
+        // Ascertain time spend by execution of the solution
+
+        System.out.println("Execution time: " + (time2 - time1) + " ms.");
+
     }
 
     public static void main(String[] args) {
